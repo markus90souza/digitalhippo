@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import Link from 'next/link'
-import { Icons, Container } from '@/components'
+import { Icons, Container, NavItems } from '@/components'
 
 export const Navbar: FC = () => {
   return (
@@ -15,6 +15,10 @@ export const Navbar: FC = () => {
                 <Link href={'/'}>
                   <Icons.logo className="h-10 w-10" />
                 </Link>
+              </div>
+
+              <div className="hidden lg:block lg:ml-8 z-50 lg:self-stretch">
+                <NavItems />
               </div>
             </div>
           </div>
